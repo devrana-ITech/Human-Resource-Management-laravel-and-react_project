@@ -90,7 +90,7 @@ const Sidebar = () => {
       <ul>
         <li><NavLink to="/setsalary"><i class="fa-solid fa-arrow-right"></i>Set Salary</NavLink>
         </li>
-        <li> <a href="ecommerce-products-list.html"><i class="fa-solid fa-arrow-right"></i>Payslip</a>
+        <li> <NavLink to="/managesetsalary"><i class="fa-solid fa-arrow-right"></i>Payslip</NavLink>
         </li>
       </ul>
     </li>
