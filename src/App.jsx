@@ -9,6 +9,9 @@ import Dashboard from "./pages/Dashboard"
 import SetSalary from "./pages/payroll/SetSalary"
 import Payslip from "./pages/payroll/Payslip"
 import ManageSalarySheet from "./pages/payroll/ManageSalarySheet"
+import ManageEmployee from "./pages/employee/ManageEmployee"
+import ManageDepartment from "./pages/department/ManageDepartment"
+import ManageDesignation from "./pages/designation/ManageDesignation"
 
 
 function App() {
@@ -26,6 +29,9 @@ function App() {
               <Route path="/managesetsalary" element={<ManageSalarySheet/>} />
               {/* <Route path="/payslip/:id" element={<Payslip/>}/> */}
               <Route path="/payslip" element={<Payslip/>}/>
+              <Route path="employee" element={<ManageEmployee/>} />
+              <Route path="departments" element={<ManageDepartment/>} />
+              <Route path="designations" element={<ManageDesignation/>} />
               <Route path="/dashboard" element={<Dashboard/>}/> 
             </Route>
           </Routes>

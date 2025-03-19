@@ -31,7 +31,7 @@ const Sidebar = () => {
         <div className="menu-title">Department</div>
       </a>
       <ul>
-        <li> <a href="ecommerce-products-list.html"><i class="fa-solid fa-arrow-right"></i>Department List</a>
+        <li> <NavLink to="/departments"><i class="fa-solid fa-arrow-right"></i>Department List</NavLink> 
         </li>
       </ul>
     </li>
@@ -42,7 +42,7 @@ const Sidebar = () => {
         <div className="menu-title">Designation</div>
       </a>
       <ul>
-        <li> <NavLink to="/managesupplier"><i class="fa-solid fa-arrow-right"></i>Designation List</NavLink> 
+        <li> <NavLink to="/designations"><i class="fa-solid fa-arrow-right"></i>Designation List</NavLink> 
         </li>
       </ul>
     </li>
@@ -53,7 +53,7 @@ const Sidebar = () => {
         <div className="menu-title">Employee</div>
       </a>
       <ul>
-        <li> <a href="ecommerce-products-list.html"><i class="fa-solid fa-arrow-right"></i>Employee List</a>
+        <li> <NavLink to="/employee"><i class="fa-solid fa-arrow-right"></i>Employee List</NavLink>
         </li>
       </ul>
     </li>

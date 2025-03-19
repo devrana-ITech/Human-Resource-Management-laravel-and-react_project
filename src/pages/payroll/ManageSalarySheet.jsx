@@ -34,7 +34,7 @@ const ManageSalarySheet = () => {
         <thead>
           <tr>
             <th>Id</th>
-            <th>EmployeeID</th>
+            {/* <th>EmployeeID</th> */}
             <th>Employee Name</th>
             <th>Salary Month</th>
             <th>Total Salary</th>
@@ -48,7 +48,7 @@ const ManageSalarySheet = () => {
                 return(
                 <tr key={i}>
                     <td>{data.id}</td>
-                    <td>{data.employee_id}</td>
+                    {/* <td>{data.employee_id_number}</td> */}
                     <td>{data.employee_id}</td>
                     {/* <td>{data.employee?.name || 'N/A'}</td> */}
                     <td>{data.salary_month}</td>
