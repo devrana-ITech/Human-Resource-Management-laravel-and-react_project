@@ -12,6 +12,9 @@ import ManageSalarySheet from "./pages/payroll/ManageSalarySheet"
 import ManageEmployee from "./pages/employee/ManageEmployee"
 import ManageDepartment from "./pages/department/ManageDepartment"
 import ManageDesignation from "./pages/designation/ManageDesignation"
+import ManageAttendance from './pages/attendance/ManageAttendance';
+import ManageLeaveApplication from "./pages/leave/ManageLeaveApplication"
+import ManageLeaveType from "./pages/leave/ManageLeaveType"
 
 
 function App() {
@@ -32,6 +35,9 @@ function App() {
               <Route path="employee" element={<ManageEmployee/>} />
               <Route path="departments" element={<ManageDepartment/>} />
               <Route path="designations" element={<ManageDesignation/>} />
+              <Route path="attendance" element={<ManageAttendance/>} />
+              <Route path="leaveapplication" element={<ManageLeaveApplication/>} />
+              <Route path="leavetype" element={<ManageLeaveType/>} />
               <Route path="/dashboard" element={<Dashboard/>}/> 
             </Route>
           </Routes>

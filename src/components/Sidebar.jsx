@@ -64,7 +64,7 @@ const Sidebar = () => {
         <div className="menu-title">Attendence</div>
       </a>
       <ul>
-        <li> <a href="ecommerce-Attendence-list.html"><i class="fa-solid fa-arrow-right"></i>Attendence List</a>
+        <li> <NavLink to="/attendance"><i class="fa-solid fa-arrow-right"></i>Attendance List</NavLink>
         </li>
       </ul>
     </li>
@@ -75,9 +75,9 @@ const Sidebar = () => {
         <div className="menu-title">Leave</div>
       </a>
       <ul>
-        <li><NavLink to="/createproduction"><i class="fa-solid fa-arrow-right"></i>Leave Type</NavLink> 
+        <li><NavLink to="/leavetype"><i class="fa-solid fa-arrow-right"></i>Leave Type</NavLink> 
         </li>
-        <li> <NavLink to="/manageproduction"><i class="fa-solid fa-arrow-right"></i>Leave Application</NavLink>
+        <li> <NavLink to="/leaveapplication"><i class="fa-solid fa-arrow-right"></i>Leave Application</NavLink>
         </li>
       </ul>
     </li>
