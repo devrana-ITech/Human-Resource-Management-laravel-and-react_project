@@ -22,6 +22,7 @@ const ManageDesignation = () => {
 
   return (
     <>
+    <h2 className='mb-3'>Designation List </h2>
   <div className="card">
   <div className="card-body">
     <div className="table-responsive dataview">
@@ -32,7 +33,6 @@ const ManageDesignation = () => {
             <th>Designation Name</th>
             <th>Department Name</th>
             <th>Status</th>
-            <th>Description</th>
             <th className="no-sort">Action</th>
           </tr>
         </thead>
@@ -43,9 +43,8 @@ const ManageDesignation = () => {
                 <tr key={i}>
                     <td>{data.id}</td>
                     <td>{data.name}</td>
-                    <td>{data.department_id}</td>
-                    <td>{data.statuses_id }</td>
-                    <td>{data.description}</td>
+                    <td>{data.department.name}</td>
+                    <td>{data.statuses.name}</td>
                     <td className='btn-group'>
                         <NavLink to="show" className="btn btn-info">Show</NavLink>
                         <NavLink to="edit" className="btn btn-success">Edit</NavLink>

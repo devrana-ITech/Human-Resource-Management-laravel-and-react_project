@@ -23,6 +23,7 @@ const ManageLeaveApplication = () => {
 
   return (
     <>
+    <h2 className='mb-3'>Leave Application List </h2>
      <div className="card-body">
     <div className="table-responsive dataview">
       <table className="table dashboard-expired-products">
@@ -38,7 +39,6 @@ const ManageLeaveApplication = () => {
             <th>Leave Status</th>
             <th>Duration</th>
             <th>Leave Reason</th>
-            <th>Application Form</th>
             <th className="no-sort">Action</th>
         </tr>
         </thead>
@@ -48,16 +48,15 @@ const ManageLeaveApplication = () => {
                 return(
                 <tr key={i}>
                     <td>{data.id}</td>
-                    <td>{data.employee_id}</td>
-                    <td>{data.leave_type_id }</td>
+                    <td>{data.employee.name}</td>
+                    <td>{data.leave_type.name }</td>
                     <td>{data.date}</td>
                     <td>{data.start_date}</td>
                     <td>{data.end_date}</td>
                     <td>{data.number_of_days}</td>
-                    <td>{data.statuses_id}</td>
+                    <td>{data.statuses.name}</td>
                     <td>{data.duration}</td>
                     <td>{data.reason}</td>
-                    <td>{data.photo}</td>
                     <td className='btn-group'>
                         <NavLink to="show" className="btn btn-info">Show</NavLink>
                         <NavLink to="edit" className="btn btn-success">Edit</NavLink>
@@ -71,8 +70,6 @@ const ManageLeaveApplication = () => {
       </table>
     </div>
   </div>
-
-    
     </>
   )
 }

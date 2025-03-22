@@ -24,6 +24,7 @@ const ManageEmployee = () => {
 
   return (
     <>
+    <h2 className='mb-3'>Employee List </h2>
    <div className="card-body">
   <div className="table-responsive dataview">
     <table className="table dashboard-expired-products">
@@ -53,9 +54,9 @@ const ManageEmployee = () => {
                     <td>{data.email }</td>
                     <td>{data.phone}</td>
                     <td>{data.gender}</td>
-                    <td>{data.department_id}</td>
-                    <td>{data.designation_id}</td>
-                    <td>{data.statuses_id}</td>
+                    <td>{data.department.name}</td>
+                    <td>{data.designations.name}</td>
+                    <td>{data.statuses.name}</td>
                     <td>{data.joining_date}</td>
                     <td className='btn-group'>
                         <NavLink to="show" className="btn btn-info">Show</NavLink>

@@ -23,6 +23,7 @@ const ManageAttendance = () => {
 
   return (
     <>
+    <h2 className='mb-3'>Attendance List </h2>
     <div className="card-body">
     <div className="table-responsive dataview">
       <table className="table dashboard-expired-products">
@@ -48,9 +49,9 @@ const ManageAttendance = () => {
                 return(
                 <tr key={i}>
                     <td>{data.id}</td>
-                    <td>{data.employee_id}</td>
+                    <td>{data.employee.name}</td>
                     <td>{data.date }</td>
-                    <td>{data.statuses_id}</td>
+                    <td>{data.statuses.name}</td>
                     <td>{data.clock_in}</td>
                     <td>{data.clock_out}</td>
                     <td>{data.late_times}</td>

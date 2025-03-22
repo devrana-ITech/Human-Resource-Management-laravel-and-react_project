@@ -23,7 +23,7 @@ const ManageLeaveType = () => {
 
   return (
     <>
-    
+    <h2 className='mb-3'>Leave Type List </h2>
 <div className="card-body">
     <div className="table-responsive dataview">
       <table className="table dashboard-expired-products">

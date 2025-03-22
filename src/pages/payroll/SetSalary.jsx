@@ -273,10 +273,10 @@ const SetSalary = () => {
         <div className="col-md-6">
           <p><strong>Employee Name :</strong> {selectEmployee && selectEmployee.name}</p>
           <p><strong>Employee ID :</strong> {selectEmployee && selectEmployee.employee_id_number}</p>
-          <p><strong>Employee Designation :</strong> {selectEmployee && selectEmployee.designations_id}</p>
-          <p><strong>Employee Department :</strong> {selectEmployee && selectEmployee.department_id}</p>
-          <p><strong>Employee Bank Account :</strong> {selectEmployee && selectEmployee.bank_accounts_id}</p>
-          <p><strong>Employee Bank Name :</strong> {selectEmployee && selectEmployee.bank_accounts_id}</p>
+          <p><strong>Employee Designation :</strong> {selectEmployee && selectEmployee.designations.name}</p>
+          <p><strong>Employee Department :</strong> {selectEmployee && selectEmployee.department.name}</p>
+          <p><strong>Employee Bank Account :</strong> {selectEmployee && selectEmployee.bank_accounts.account_number}</p>
+          <p><strong>Employee Bank Name :</strong> {selectEmployee && selectEmployee.bank_accounts.bank_name}</p>
         </div>
         {/* Attendance Info */}
         <div className="col-md-6">

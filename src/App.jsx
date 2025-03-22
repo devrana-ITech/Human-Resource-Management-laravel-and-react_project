@@ -30,8 +30,7 @@ function App() {
               <Route index element={<Index/>}/>
               <Route path="/setsalary" element={<SetSalary/>} />
               <Route path="/managesetsalary" element={<ManageSalarySheet/>} />
-              {/* <Route path="/payslip/:id" element={<Payslip/>}/> */}
-              <Route path="/payslip" element={<Payslip/>}/>
+              <Route path="/payslip/:id" element={<Payslip/>}/>
               <Route path="employee" element={<ManageEmployee/>} />
               <Route path="departments" element={<ManageDepartment/>} />
               <Route path="designations" element={<ManageDesignation/>} />
