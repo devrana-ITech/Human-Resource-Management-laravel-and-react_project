@@ -7,7 +7,7 @@ const ManageLeaveApplication = () => {
     const [leaveapplication, setLeaveApplication]=useState([])
 
     const fetchLeaveApplication=()=>{
-        axios.get("http://localhost/LARAVEL/LARAVEL_PROJECT/garment-manufacturing-erp/public/api/leaveapplication")
+        axios.get("https://laravel-project.ranaitech.info/public/api/leaveapplication")
         .then((res)=>{
             console.log(res);
             setLeaveApplication(res.data.leaveapplications)

@@ -151,7 +151,7 @@ const SetSalary = () => {
 
 
     const fetchEmployee=()=>{
-        axios.get("http://localhost/LARAVEL/LARAVEL_PROJECT/garment-manufacturing-erp/public/api/employeeapi")
+        axios.get("https://laravel-project.ranaitech.info/public/api/employeeapi")
         .then((res)=>{
           console.log(res);
           setEmployee(res.data.employees)
@@ -164,7 +164,7 @@ const SetSalary = () => {
       }
 
     const fetchPayslip_Items=()=>{
-        axios.get("http://localhost/LARAVEL/LARAVEL_PROJECT/garment-manufacturing-erp/public/api/payslip_itemsapi")
+        axios.get("https://laravel-project.ranaitech.info/public/api/payslip_itemsapi")
         .then((res)=>{
           console.log(res);
           setPayslipItems(res.data.payslip_items)
@@ -225,7 +225,7 @@ const SetSalary = () => {
       }
 
       console.log(data);
-      axios.post("http://localhost/LARAVEL/LARAVEL_PROJECT/garment-manufacturing-erp/public/api/payslip", data)
+      axios.post("https://laravel-project.ranaitech.info/public/api/payslip", data)
       .then((res)=>{
         console.log(res);
         alert("Data has successfully saved");
@@ -511,10 +511,3 @@ export default SetSalary
 
 
 
-// value={payslipProcess.total_working_days}   onChange={(e) => setPayslipProcess({ ...payslipProcess, total_working_days: e.target.value })}
-// value={payslipProcess.statuses_id}   onChange={(e) => setPayslipProcess({ ...payslipProcess, statuses_id: e.target.value })}
-// value={payslipProcess.payment_method}   onChange={(e) => setPayslipProcess({ ...payslipProcess, payment_method: e.target.value })}
-// value={payslipProcess.balance_leaves}   onChange={(e) => setPayslipProcess({ ...payslipProcess, balance_leaves: e.target.value })}
-// value={payslipProcess.leaves_taken}   onChange={(e) => setPayslipProcess({ ...payslipProcess, leaves_taken: e.target.value })}
-// value={payslipProcess.working_days_attendance}   onChange={(e) => setPayslipProcess({ ...payslipProcess, working_days_attendance: e.target.value })}
-// onClick={handleProcess}

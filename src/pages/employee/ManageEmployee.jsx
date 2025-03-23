@@ -6,7 +6,7 @@ const ManageEmployee = () => {
     const [employee, setEmployee]=useState([])
 
     const fetchEmployee=()=>{
-        axios.get("http://localhost/LARAVEL/LARAVEL_PROJECT/garment-manufacturing-erp/public/api/employeeapi")
+        axios.get("https://laravel-project.ranaitech.info/public/api/employeeapi")
         .then((res)=>{
             console.log(res);
             setEmployee(res.data.employees)

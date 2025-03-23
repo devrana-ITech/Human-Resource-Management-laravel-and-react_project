@@ -7,7 +7,7 @@ const ManageLeaveType = () => {
     const [leavetype, setLeaveType]=useState([])
 
     const fetchLeaveType=()=>{
-        axios.get("http://localhost/LARAVEL/LARAVEL_PROJECT/garment-manufacturing-erp/public/api/leavetype")
+        axios.get("https://laravel-project.ranaitech.info/public/api/leavetype")
         .then((res)=>{
             console.log(res);
             setLeaveType(res.data.leavetypes)

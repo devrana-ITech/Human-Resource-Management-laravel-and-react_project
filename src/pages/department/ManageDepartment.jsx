@@ -6,7 +6,7 @@ const ManageDepartment = () => {
     const [department, setDepartment]=useState([])
 
     const fetchDepartment=()=>{
-        axios.get("http://localhost/LARAVEL/LARAVEL_PROJECT/garment-manufacturing-erp/public/api/departments")
+        axios.get("https://laravel-project.ranaitech.info/public/api/departments")
         .then((res)=>{
             console.log(res);
             setDepartment(res.data.departments)
@@ -23,6 +23,11 @@ const ManageDepartment = () => {
   return (
     <>
     <h2 className='mb-3'>Department List </h2>
+     <div className="ms-auto mb-3">
+          <div className="btn-group">
+             <NavLink to='/departmentcreate'  className="btn btn-primary"><i className="bi bi-plus-circle"/>Manage Department</NavLink>
+          </div>
+        </div>
      <div className="card">
   <div className="card-body">
     <div className="table-responsive dataview">

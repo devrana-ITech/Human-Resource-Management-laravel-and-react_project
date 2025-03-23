@@ -6,7 +6,7 @@ const ManageDesignation = () => {
     const [designation, setDesignation]=useState([])
 
     const fetchDesignation=()=>{
-        axios.get("http://localhost/LARAVEL/LARAVEL_PROJECT/garment-manufacturing-erp/public/api/designations")
+        axios.get("https://laravel-project.ranaitech.info/public/api/designations")
         .then((res)=>{
             console.log(res);
             setDesignation(res.data.designations)

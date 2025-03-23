@@ -7,7 +7,7 @@ const ManageAttendance = () => {
     const [attendance, setAttendance]=useState([])
 
     const fetchAttendance=()=>{
-        axios.get("http://localhost/LARAVEL/LARAVEL_PROJECT/garment-manufacturing-erp/public/api/attendance")
+        axios.get("https://laravel-project.ranaitech.info/public/api/attendance")
         .then((res)=>{
             console.log(res);
             setAttendance(res.data.attendances)

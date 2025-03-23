@@ -7,7 +7,7 @@ const ManageSalarySheet = () => {
     const [Payslip, setPayslip]=useState([])
 
     const fetchPayslip=()=>{
-        axios.get(" http://localhost/LARAVEL/LARAVEL_PROJECT/garment-manufacturing-erp/public/api/payslipindex")
+        axios.get("https://laravel-project.ranaitech.info/public/api/payslipindex")
         .then((res)=>{
             console.log(res);
             setPayslip(res.data.payslips)

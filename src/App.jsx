@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom"
 import Header from "./components/Header"
 import RightSideber from "./components/RightSideber"
 import Sidebar from "./components/Sidebar"
@@ -15,6 +15,7 @@ import ManageDesignation from "./pages/designation/ManageDesignation"
 import ManageAttendance from './pages/attendance/ManageAttendance';
 import ManageLeaveApplication from "./pages/leave/ManageLeaveApplication"
 import ManageLeaveType from "./pages/leave/ManageLeaveType"
+import CreateDepartment from "./pages/department/CreateDepartment"
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    <HashRouter>
       <Header/>
         <Sidebar/>
           <Routes>
@@ -37,12 +38,13 @@ function App() {
               <Route path="attendance" element={<ManageAttendance/>} />
               <Route path="leaveapplication" element={<ManageLeaveApplication/>} />
               <Route path="leavetype" element={<ManageLeaveType/>} />
+              <Route path="departmentcreate" element={<CreateDepartment/>} />
               <Route path="/dashboard" element={<Dashboard/>}/> 
             </Route>
           </Routes>
         <RightSideber/>
       <Footer/>
-    </BrowserRouter>
+    </HashRouter>
     
     </>
   )
